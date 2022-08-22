@@ -82,12 +82,7 @@
         const name = $('input[name="name"]').val();
         const name_kana = $('input[name="name_kana"]').val();
 
-        const msg = `
-        氏名(姓)：${customer_name_sei}\n
-        氏名（読み仮名）：${customer_name_mei}\n
-        氏名(セイ)：${customer_name_kana_sei}\n
-        氏名(メイ)：${customer_name_kana_mei}\n
-        `;
+        const msg = `氏名(姓)：${customer_name_sei}\n氏名（読み仮名）：${customer_name_mei}\n氏名(セイ)：${customer_name_kana_sei}\n氏名(メイ)：${customer_name_kana_mei}\n`;
         sendText(msg);
         return false;
       });
