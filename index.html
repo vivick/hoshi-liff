@@ -11,24 +11,24 @@
 
 <body>
   <form class="w-75 mx-auto">
-    <p class="mt-3">お客様 氏名(姓)</p>
+    <p class="mt-3">姓</p>
     <div>
-      <input class="form-control w-100 mt-1" name="customer_name_sei" placeholder="お客様 氏名(姓)を入力してください" required />
+      <input class="form-control w-100 mt-1" name="customer_name_sei" placeholder="氏名(姓)を入力してください" required />
     </div>
 
-    <p class="mt-3">お客様 氏名(名)</p>
+    <p class="mt-3">名</p>
     <div>
-      <input class="form-control w-100 mt-1" name="customer_name_mei" placeholder="お客様 氏名(名)を入力してください" required />
+      <input class="form-control w-100 mt-1" name="customer_name_mei" placeholder="氏名(名)を入力してください" required />
     </div>
 
-    <p class="mt-3">お客様 氏名(メイ)</p>
+    <p class="mt-3">セイ</p>
     <div>
-      <input class="form-control w-100 mt-1" name="customer_name_kana_sei" placeholder="お客様 氏名(メイ)を入力してください" required />
+      <input class="form-control w-100 mt-1" name="customer_name_kana_sei" placeholder="氏名(メイ)を入力してください" required />
     </div>
 
-    <p class="mt-3">お客様 氏名(メイ)</p>
+    <p class="mt-3">メイ</p>
     <div>
-      <input class="form-control w-100 mt-1" name="customer_name_kana_mei" placeholder="お客様 氏名(メイ)を入力してください" required />
+      <input class="form-control w-100 mt-1" name="customer_name_kana_mei" placeholder="氏名(メイ)を入力してください" required />
     </div>
 
     <input type="submit" class="mt-4 btn btn-primary" value="送信" />
@@ -83,10 +83,10 @@
         const name_kana = $('input[name="name_kana"]').val();
 
         const msg = `
-        お客様 氏名(姓)：${customer_name_sei}\n
-        お名前（読み仮名）：${customer_name_mei}\n
-        お客様 氏名(セイ)：${customer_name_kana_sei}\n
-        お客様 氏名(メイ)：${customer_name_kana_mei}\n
+        氏名(姓)：${customer_name_sei}\n
+        氏名（読み仮名）：${customer_name_mei}\n
+        氏名(セイ)：${customer_name_kana_sei}\n
+        氏名(メイ)：${customer_name_kana_mei}\n
         `;
         sendText(msg);
         return false;
