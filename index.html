@@ -11,7 +11,7 @@
 
 <body>
   <form class="w-75 mx-auto">
-    <p class="mt-3">姓姓姓</p>
+    <p class="mt-3">姓</p>
     <div>
       <input class="form-control w-100 mt-1" name="customer_name_sei" placeholder="氏名(姓)を入力してください" required />
     </div>
@@ -85,7 +85,7 @@
         const customer_name_kana_sei = $('input[name="customer_name_kana_sei"]').val();
         const customer_name_kana_mei = $('input[name="customer_name_kana_mei"]').val();
 
-        const msg = `氏名(姓)：${customer_name_sei}\n氏名（読み仮名）：${customer_name_mei}\n氏名(セイ)：${customer_name_kana_sei}\n氏名(メイ)：${customer_name_kana_mei}\n`;
+        const msg = `氏名(姓)：${customer_name_sei}\n氏名（名）：${customer_name_mei}\n氏名(セイ)：${customer_name_kana_sei}\n氏名(メイ)：${customer_name_kana_mei}`;
         sendText(msg);
         return false;
       });
