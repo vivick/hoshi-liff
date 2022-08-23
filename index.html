@@ -15,7 +15,7 @@
     <div>
       <input class="form-control w-100 mt-1" name="customer_name_sei" placeholder="氏名(姓)を入力してください" required />
     </div>
-
+<!-- 
     <p class="mt-3">名</p>
     <div>
       <input class="form-control w-100 mt-1" name="customer_name_mei" placeholder="氏名(名)を入力してください" required />
@@ -29,7 +29,7 @@
     <p class="mt-3">メイ</p>
     <div>
       <input class="form-control w-100 mt-1" name="customer_name_kana_mei" placeholder="氏名(メイ)を入力してください" required />
-    </div>
+    </div> -->
 
     <input type="submit" class="mt-4 btn btn-primary" value="送信" />
   </form>
@@ -81,11 +81,12 @@
       $("form").submit(function () {
         const name = $('input[name="name"]').val();
         const customer_name_sei = $('input[name="customer_name_sei"]').val();
-        const customer_name_mei = $('input[name="customer_name_mei"]').val();
-        const customer_name_kana_sei = $('input[name="customer_name_kana_sei"]').val();
-        const customer_name_kana_mei = $('input[name="customer_name_kana_mei"]').val();
+        // const customer_name_mei = $('input[name="customer_name_mei"]').val();
+        // const customer_name_kana_sei = $('input[name="customer_name_kana_sei"]').val();
+        // const customer_name_kana_mei = $('input[name="customer_name_kana_mei"]').val();
 
-        const msg = `氏名(姓)：${customer_name_sei}\n氏名（名）：${customer_name_mei}\n氏名(セイ)：${customer_name_kana_sei}\n氏名(メイ)：${customer_name_kana_mei}`;
+        // const msg = `氏名(姓)：${customer_name_sei}\n氏名（名）：${customer_name_mei}\n氏名(セイ)：${customer_name_kana_sei}\n氏名(メイ)：${customer_name_kana_mei}`;
+        const msg = `氏名(姓)：${customer_name_sei}`;
         sendText(msg);
         return false;
       });
