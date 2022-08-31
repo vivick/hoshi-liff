@@ -85,7 +85,8 @@
         const customer_name_kana_sei = $('input[name="customer_name_kana_sei"]').val();
         const customer_name_kana_mei = $('input[name="customer_name_kana_mei"]').val();
 
-        const msg = `お客様 氏名\n姓(セイ)：${customer_name_sei}(${customer_name_kana_sei})\n名(メイ)：${customer_name_mei}(${customer_name_kana_mei})`;
+//         const msg = `お客様 氏名\n姓(セイ)：${customer_name_sei}(${customer_name_kana_sei})\n名(メイ)：${customer_name_mei}(${customer_name_kana_mei})`;
+        const msg = `姓名（セイメイ）\n${customer_name_sei} ${customer_name_mei} (${customer_name_kana_sei} ${customer_name_kana_mei})`;
         // const msg = `お客様 氏名(姓)：${customer_name_sei}`;
         sendText(msg);
         return false;
