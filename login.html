@@ -1,8 +1,14 @@
 <body>
+  <div id="uri"></div>
   <div>Hello <span id="name">world</span>.</div>
 </body>
 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+<script>
+  var _uri = location.href;
+  $("#uri").append(_uri);
+</script>
 <script>
   // LIFFの初期化を行う
   liff
