@@ -21,11 +21,11 @@
     <title>LLWの文字操作</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
-    <script src="/js/app.js"></script>
   </head>
   <body>
-    <h2>返却される文字を配列→変数へ入れる</h2>
+    <h2>返却される文字を配列→変数へ入れるる</h2>
     <p>姓名（セイメイ）\n星 卓也 (ホシ タクヤ)</p>
+    <div id="showid"></div>
 
     <!-- GETでlineId,名前取得して、APIへPOST -->
 
@@ -123,6 +123,7 @@
         console.log("error", err);
       });
 
+    $("#showid").append(lineId);
     return lineId;
   }
 
